@@ -1,7 +1,10 @@
 这个主要是我自己用的，哈哈
 ，只要运行创建一些连接后，然后，下载米哈游启动器，最好下载两个，一个用来更新国际服，一个用来更新国服，创建连接完成后，
 for /d %i in ("G:\software\HoYoPlay\games\Genshin Impact game\GenshinImpact_Data\*") do mklink /J  "G:\software\genshin_impactCN\YuanShen_Data\%~nxi" "%i"
-删除Managed Native Plugins 。 然后StreamingAssets里面会有20527480.blk 2KB的不一样，每次启动好像要下载2KB
+只要Resources（只连接这个文件夹）
+然后StreamingAssets里面
+for /d %i in ("G:\software\HoYoPlay\games\Genshin Impact game\GenshinImpact_Data\StreamingAssets\*") do mklink /J  "G:\software\genshin_impactCN\YuanShen_Data\StreamingAssets\%~nxi" "%i" 
+只保留，AudioAssets AssetBundles VideoAssets，其实只映射这三个也是一样的。。
 随便下载一个https://www.homuhomu.cn/ 原神替换包，能让启动器定位游戏就行
 然后用米哈游启动器修复游戏完事了，
 
